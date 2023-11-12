@@ -1,0 +1,117 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color:white;
+    background-image: url('/IMAGENESYVIDEOS/FONDO-DE-PANTALLA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    height: 170px;
+}
+
+header {
+    display: flex;
+    min-height: 100px;
+    background-image: url('/IMAGENESYVIDEOS/fondo-degradado.jpg');
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+article p{
+    font-size: 22px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.texto{
+    text-align: justify;
+}
+
+header a{
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 180px;
+    margin-right: 20px;
+}
+
+nav a{
+    font-weight: 700;
+    padding-right: 40px;
+    color: black;
+}
+
+nav{
+    font-size: 25px;
+}
+
+section{
+    text-align: center;
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+/*Cuadro para avisos*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fila {
+    display: flex;
+}
+
+.cuadro {
+    width: 430px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.8); /* Color blanco semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Animación de transición */
+    padding: 20px; /* Espacio interno para que el contenido sea visible */
+    margin: 10px; /* Margen entre cuadros */
+    box-shadow:     0 0 10px rgba(0, 0, 0, 0.9), /* Sombra principal */
+    0 0 20px rgba(0, 0, 0, 0.3) inset; /* Sombra interna para un efecto degradado */;;
+}
+
+.cuadro:hover {
+    transform: scale(1.1); /* Aumento del tamaño al pasar el mouse */
+}
+
+
+
+@media (max-width: 840px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
